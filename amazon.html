@@ -1,48 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-    <title> Amazon</title>
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/amazon.css">
     <header>
-        <nav>
-            <img src="img/logo.png" width="120px" height="120pxpx"> 
-            <p id="lista0"> A entrega será feita em Ourinhos 11111111 </br>
-                Atualizar CEP  
-            </p>
-            <div id="divBusca">
-               <input type="text" id="txtBusca" placeholder="Pesquisar Amazon.com.br"/>
-               <img src="search3.png" id="btnBusca" alt="Buscar"/>
-             </div>
-             <p id="lista"> Olá, faça o seu login </br>
-                Contas e Listas 
-             </p>
-             <p id="lista2"> Devoluções </br> 
-                e Pedidos
-             </p>
-             <p>Carrinho</p>
-        </nav>
-      
+       <div class="top-bar">
+        <span>📦 A entrega será feita em Barueri 0645/4000</span>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <a href="#">amazon.com.br</a>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-btn">Todas ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Eletrônicos</a>
+                <a href="#">Livros</a>
+                <a href="#">Roupas</a>
+                <a href="#">Casa e Cozinha</a>
+                <a href="#">Esportes</a>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar Amazon.com.br">
+            <button>🔍</button>
+        </div>
+
+        <div class="nav-links">
+            <a href="#" class="nav-item">Olá, faça seu<br><strong>login</strong></a>
+
+            <div class="nav-dropdown">
+                <a href="#" class="nav-item">Contas e Listas ▼</a>
+                <div class="nav-dropdown-content">
+                    <a href="#">Minha conta</a>
+                    <a href="#">Lista de desejos</a>
+                    <a href="#">Recomendações</a>
+                </div>
+            </div>
+
+            <div class="nav-dropdown">
+                <a href="#" class="nav-item">Devoluções<br><strong>e Pedidos</strong></a>
+                <div class="nav-dropdown-content">
+                    <a href="#">Fazer devolução</a>
+                    <a href="#">Acompanhar devolução</a>
+                    <a href="#">Política de devolução</a>
+                </div>
+            </div>
+
+            <a href="#" class="cart">🛒 <strong>Carrinho</strong></a>
+        </div>
+    </nav>
+
+    <div class="nav-secondary">
+        <a href="#" class="nav-sec-todos">☰ Todos</a>
+        <a href="#">Venda na Amazon</a>
+        <a href="#">Chega em 15 min</a>
+        <a href="#">Ofertas do Dia</a>
+        <a href="#">Mais Vendidos</a>
+        <a href="#">Games</a>
+        <a href="#">Livros</a>
+        <a href="#">Música</a>
+        <a href="#">Casa</a>
+        <a href="#">Eletrônicos</a>
+        <a href="#">Brinquedos e Jogos</a>
+        <a href="#">Prime ▼</a>
+        <a href="#">Computadores</a>
+        <span class="nav-sec-promo">The Boys S5 - Assista agora</span>
+    </div>
     </header>
 </head>
 <body>
+   <div class="banner">
+   <div class="carousel-wrapper">
+   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/desconto.png" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/echo.png" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/luisasonza.png" class="d-block w-100" alt="...">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/noiva.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+
+  <!-- BOTÕES FORA DA DIV .carousel-inner -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+
+</div>
+
+   <div class="cards-row">
+
+<div class="amazon-card">
+    <h3>Ofertas em Alimentos e Bebidas certificados</h3>
+    <div class="items">
+        <img src="img/comida1.png" alt="" > 
+        <img src="img/comida2.png" alt="">
+        <img src="img/comida3.png" alt="">
+        <img src="img/comida4.png" alt="">
+    </div>
+    <a href="#" class="ver-mais">Ver mais</a>
+</div>
+
+<div class="amazon-card">
+    <h3>Ofertas em Mês da Terra</h3>
+    <div class="items">
+        <img src="img/oferta1.png" alt="" > 
+        <img src="img/oferta2.png" alt="">
+        <img src="img/oferta3.png" alt="">
+        <img src="img/oferta4.png" alt="">
+    </div>
+    <a href="#" class="ver-mais">Ver mais</a>
+</div>
+
+<div class="amazon-card">
+    <h3>Vem aí! Fique ligado</h3>
+    <div class="items">
+        <img src="img/fica.png" alt="" > 
+    </div>
+    <a href="#" class="ver-mais">Ver mais</a>
+</div>
+
+   </div> <!-- fim cards-row -->
+   </div> <!-- fim carousel-wrapper -->
+
+
+
+</div> <!-- fim banner -->
+
 
     
     
-    
-    
-    <footer>
-         <p><a href="/condições.html">Condições de Uso</a> |
-        <a href="/condições.html">Notificação de Privacidade</a> |
-        <a href="/condições.html">Cookies</a> |
-        <a href="/condições.html">Anúncios Baseados em Interesses</a>  </p>
+    <footer class="footer">
+    <div class="footer-top">
+        <a href="amazon.html" class="back">Voltar ao início</a>
+    </div>
 
-         <p>&copy; 2021-2026 Amazon.com, Inc. ou suas afiliadas </p>
+    <div class="footer-links">
+        <div class="footer-col">
+            <h3>Conheça-nos</h3>
+            <a href="#">Sobre a Amazon</a>
+            <a href="#">Informações corporativas</a>
+            <a href="#">Carreiras</a>
+            <a href="#">Comunicados à Imprensa</a>
+            <a href="#">Comunidade</a>
+            <a href="#">Acessibilidade</a>
+            <a href="#">Amazon Science</a>
+        </div>
 
-        <p>Amazon Serviços de Varejo do Brasil Ltda. | CNPJ 15.436.940/0001-03 </p> 
+        <div class="footer-col">
+            <h3>Ganhe dinheiro conosco</h3>
+            <a href="#">Venda na Amazon</a>
+            <a href="#">Proteja e construa a sua marca</a>
+            <a href="#">Forneça para a Amazon</a>
+            <a href="#">Publique seus livros</a>
+            <a href="#">Seja um associado</a>
+            <a href="#">Anuncie seus produtos</a>
+        </div>
 
-        <p>Av. Juscelino Kubitschek, 2041, Torre E, 18° andar - São Paulo CEP: 04543-011| <a href="condi.html">Fale conosco</a>| ajuda-amazon@amazon.com.br</p>
-        
-        <p> Formas de pagamento aceitas: cartões de crédito (Visa, MasterCard, Elo e American Express), cartões de débito (Visa e Elo), Boleto e Pix.</p>
-    </footer>
+        <div class="footer-col">
+            <h3>Pagamento</h3>
+            <a href="#">Meios de pagamento</a>
+            <a href="#">Compre com Pontos</a>
+            <a href="#">Cartão de crédito Amazon</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Deixe-nos ajudar você</h3>
+            <a href="#">Sua conta</a>
+            <a href="#">Frete e prazo de entrega</a>
+            <a href="#">Devoluções e reembolsos</a>
+            <a href="#">Gerencie seu conteúdo e dispositivos</a>
+            <a href="#">Recalls e alertas de segurança</a>
+            <a href="#">Ajuda</a>
+        </div>
+    </div>
+
+    <div class="footer-middle">
+        <img src="img/logo.png" alt="Amazon Logo">
+        <button id="btnBrasil">Brasil</button>
+    </div>
+
+    <div class="footer-bottom">
+        <p><a href="#">Condições de Uso</a> | <a href="#">Notificação de Privacidade</a> | <a href="#">Cookies</a> | <a href="#">Anúncios Baseados em Interesses</a></p>
+        <p>&copy; 2021–2026 Amazon.com, Inc. ou suas afiliadas</p>
+        <p>Amazon Serviços de Varejo do Brasil Ltda. | CNPJ 15.436.940/0001-03</p>
+        <p>Av. Juscelino Kubitschek, 2041, Torre E, São Paulo – SP | <a href="#">Fale conosco</a></p>
+        <p>Formas de pagamento aceitas: cartões de crédito e débito, boleto e Pix.</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 
